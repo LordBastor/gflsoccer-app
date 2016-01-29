@@ -1,0 +1,27 @@
+<ion-view view-title="{{page_title}}">
+	<ion-nav-bar class="bar-dark"></ion-nav-bar>
+	<ion-content>
+		<ion-list>
+			<div class="list card">
+				<div class="item item-icon-right" ng-repeat="event in events">
+					<p><strong>Event Name:</strong> {{event.summary}}</p>
+					<div ng-if='event.start.date && event.end.date'>
+						<p><strong>Starts:</strong> {{event.start.date|date}}</p>
+						<p><strong>Ends:</strong> {{event.end.date|date}}</p>
+					</div>
+					<div ng-if='event.start.dateTime && event.end.dateTime'>
+						<p><strong>Starts:</strong> {{event.start.dateTime|date : 'medium'}}</p>
+						<p><strong>Ends:</strong> {{event.end.dateTime|date : 'medium'}}</p>
+					</div>
+					<p ng-if="event.summary"><strong>Summary:</strong> {{event.summary}}</p>
+					<div ng-if="event.location">
+						<div class="item-text-wrap">
+							<strong>Location:</strong> {{event.location}}
+						</div>
+						<i class="icon ion-location" ng-click="open_map(event.location);"></i>
+					</div>
+				</div>
+			</div>
+		</ion-list>
+	</ion-content>
+</ion-view>

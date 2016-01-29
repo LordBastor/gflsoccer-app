@@ -1,0 +1,35 @@
+<ion-view view-title="{{page_title}}">
+	<ion-nav-bar class="bar-dark"></ion-nav-bar>
+
+	<div class="bar bar-subheader">
+		<h2 class="title">{{sub_title}}</h2>
+	</div>
+
+	<ion-content class="has-header has-subheader">
+
+		<div class="list card">
+			<div class="item item-body">
+				<img class="full-image" ng-src="img/logo.jpg">
+				<p>{{gfl_description}}</p>
+			</div>
+		</div>
+
+		<div ng-repeat="coach in coaches" class="list card">
+
+			<div class="item item-avatar">
+				<img ng-src="{{coach.photo}}">
+				<h2>{{coach.name}}</h2>
+			</div>
+
+			<div class="item item-body">
+				<p>{{coach.description}}</p>
+			</div>
+		</div>
+
+		<div class="item item-icon-left">
+			<i class="icon ion-email"></i>
+			{{email}}
+		</div>
+
+	</ion-content>
+</ion-view>

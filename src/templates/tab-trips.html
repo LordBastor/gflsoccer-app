@@ -1,0 +1,13 @@
+<ion-view view-title="{{page_title}}">
+	<ion-nav-bar class="bar-dark"></ion-nav-bar>
+	<ion-content>
+		<ion-list>
+			<ion-item class="item-remove-animate item-avatar item-icon-left item-icon-right" ng-repeat="trip in trips" type="item-text-wrap" href="#/tab/{{trip.path}}">
+				<i class="icon {{trip.icon}}"></i>
+				<h2>{{trip.name}}</h2>
+				<p>{{trip.flavour_text}}</p>
+				<i class="icon ion-chevron-right icon-accessory"></i>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
