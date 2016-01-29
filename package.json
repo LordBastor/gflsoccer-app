@@ -42,7 +42,8 @@
   "cordovaPlugins": [
     "cordova-plugin-calendar",
     "cordova-plugin-whitelist",
-    "org.apache.cordova.splashscreen"
+    "org.apache.cordova.splashscreen",
+    "cordova-plugin-splashscreen"
   ],
   "cordovaPlatforms": [
     "android",
