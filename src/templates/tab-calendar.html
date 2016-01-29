@@ -2,7 +2,7 @@
 	<ion-content class="has-header">
 		<ion-list>
 			<div class="list card">
-				<div class="item item-icon-right" ng-repeat="event in events">
+				<div class="item" ng-repeat="event in events">
 					<p><strong>Event Name:</strong> {{event.summary}}</p>
 					<div ng-if='event.start.date && event.end.date'>
 						<p><strong>Starts:</strong> {{event.start.date|date}}</p>
@@ -17,7 +17,10 @@
 						<div class="item-text-wrap">
 							<strong>Location:</strong> {{event.location}}
 						</div>
-						<i class="icon ion-location" ng-click="open_map(event.location);"></i>
+						<div class="button-bar">
+							<button class="button" ng-click="open_map(event.location);"><i class="icon ion-location"></i></button>
+							<button class="button" ng-click="add_event(event);"><i class="icon ion-ios-calendar"></i></button>
+						</div>
 					</div>
 				</div>
 			</div>

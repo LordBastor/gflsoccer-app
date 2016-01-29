@@ -40,10 +40,9 @@
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
-    {
-      "locator": "https://github.com/apache/cordova-plugin-whitelist.git",
-      "id": "cordova-plugin-whitelist"
-    }
+    "cordova-plugin-calendar",
+    "cordova-plugin-whitelist",
+    "org.apache.cordova.splashscreen"
   ],
   "cordovaPlatforms": [
     "android",
