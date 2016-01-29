@@ -1,4 +1,4 @@
-starter.services.factory('Camps', function() {
+gfl.services.factory('Camps', function() {
 
 	var camps = [{
 		path: 'camp/register/',

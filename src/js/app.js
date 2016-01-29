@@ -7,11 +7,11 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-var starter = {};
+var gfl = {};
 
-starter.app         = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngCordova', 'ngResource']);
-starter.controllers = angular.module('starter.controllers', []),
-starter.services    = angular.module('starter.services', [])
+gfl.app         = angular.module('gfl', ['ionic', 'gfl.controllers', 'gfl.services', 'ngCordova', 'ngResource']);
+gfl.controllers = angular.module('gfl.controllers', []),
+gfl.services    = angular.module('gfl.services', [])
 
 .run(function($ionicPlatform, $rootScope) {
 	$rootScope.VERSION = window.VERSION;

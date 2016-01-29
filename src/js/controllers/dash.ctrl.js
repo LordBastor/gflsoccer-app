@@ -1,4 +1,4 @@
-starter.controllers.controller('DashCtrl', function($scope)
+gfl.controllers.controller('DashCtrl', function($scope)
 {
 	
 });

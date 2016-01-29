@@ -1,4 +1,4 @@
-starter.controllers.controller('CalendarCtrl', function($scope, $stateParams, Calendar)
+gfl.controllers.controller('CalendarCtrl', function($scope, $stateParams, Calendar)
 {
 	$scope.page_title = 'Event Calendar';
 	Calendar.get(function(data){ $scope.events = data.items; });

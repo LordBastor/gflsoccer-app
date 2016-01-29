@@ -1,4 +1,4 @@
-starter.controllers.controller('AboutCtrl', function($scope, $stateParams)
+gfl.controllers.controller('AboutCtrl', function($scope, $stateParams)
 {
 	$scope.page_title = 'About GFL Soccer Enterprises';
 	$scope.sub_title = 'Top professionals taking soccer to the next level';

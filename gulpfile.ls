@@ -55,7 +55,7 @@ gulp.task \build, ->
 
 gulp.task \templates, ->
 	gulp.src 'src/templates/**/*.html'
-		.pipe $.angularTemplatecache \templates.js, { module: \starter, root: \templates/ }
+		.pipe $.angularTemplatecache \templates.js, { module: \gfl, root: \templates/ }
 		.pipe gulp.dest \www/dist
 
 gulp.task \default, [ \scss, \templates, \build ]

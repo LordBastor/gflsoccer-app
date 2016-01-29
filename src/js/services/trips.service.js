@@ -1,4 +1,4 @@
-starter.services.factory('Trips', function() {
+gfl.services.factory('Trips', function() {
 
 	var trips = [{
 		path: 'trip/clinic/',

@@ -1,4 +1,4 @@
-starter.services.factory('Calendar', function($resource)
+gfl.services.factory('Calendar', function($resource)
 {
 	/*
 	 Internet Timestamp Generator
