@@ -1,7 +1,12 @@
 gfl.controllers.controller('CalendarCtrl', function($scope, $stateParams, Calendar)
 {
 	$scope.page_title = 'Event Calendar';
-	Calendar.get(function(data){ $scope.events = data.items; });
+	$scope.events = Calendar.get(function(data){});
+	$scope.events.$promise.then(function(data)
+	{
+		$scope.events = data.items;
+	});
+	// Calendar.get(function(data){ $scope.events = data.items; });
 	
 	$scope.open_map = function(location)
 	{
